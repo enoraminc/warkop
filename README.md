@@ -5,6 +5,6 @@ warkop doc and readme files
 
 # FAQ
 * apa sih Nota?
-** Nota adalah Note of Asset. A contractless Tokenized Asset created by Lumbung IO.
+  * Nota adalah Note of Asset. A contractless Tokenized Asset created by Lumbung IO.
 
 # Contact Us
