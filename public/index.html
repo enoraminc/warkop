@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Details - ProjectIt</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#FAC638", "secondary-accent": "#5E2F7F", "background-light": "#f8f8f5", "background-dark": "#231e0f", "card-background": "#292929", "border-dark": "#444444", "text-light": "#FFFFFF", "text-muted": "#AAAAAA", "text-gray-input": "#7A7A7A"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-muted">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 flex items-center justify-between whitespace-nowrap border-b border-solid border-border-dark bg-background-dark/80 px-4 py-3 backdrop-blur-sm sm:px-6 md:px-10 lg:px-20">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-text-light">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-text-light text-lg font-bold leading-tight tracking-[-0.015em]">ProjectIt</h2>
+</div>
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-muted flex border-none bg-card-background items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light focus:outline-0 focus:ring-0 border-none bg-card-background focus:border-none h-full placeholder:text-text-gray-input px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8">
+<div class="hidden md:flex items-center gap-6">
+<a class="text-text-light text-sm font-medium leading-normal hover:text-primary" href="#">Dashboard</a>
+<a class="text-text-light text-sm font-medium leading-normal hover:text-primary" href="#">Projects</a>
+<a class="text-text-light text-sm font-medium leading-normal hover:text-primary" href="#">Discover</a>
+<a class="text-text-light text-sm font-medium leading-normal hover:text-primary" href="#">Profile</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/80 transition-colors">
+<span class="truncate">Create Project</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1H_r5064ccZW78QYYLs6KepGGSNre0BVswi7rN6zSqsynAd2j2wUDW9jJzq9GRnB9GIHAhwVvkHygvJi8SbasfVsqKUd1A3NKO2HQVFu_PEIJxFiS_cdqem8THYnx2KhbowcZA7aCIC-y08zrsauAixSRgDPDVythA6aIboB95HEf89Z5RO56PZ7dF-sPMGrj2sDZzV8SQFQiScpqEdybuvEellZXJfsxhjF_pVE_F9zOE0ehSIhmwRvfw57eHOijvBsXJxbKaZg");'></div>
+</div>
+</header>
+<main class="w-full max-w-screen-2xl mx-auto p-4 sm:p-6 lg:p-10">
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-12 lg:col-span-8">
+<div class="flex flex-col gap-8">
+<div>
+<div class="flex flex-wrap gap-2 mb-2">
+<a class="text-text-muted text-sm font-medium leading-normal hover:text-text-light" href="#">Projects</a>
+<span class="text-text-muted text-sm font-medium leading-normal">/</span>
+<span class="text-text-light text-sm font-medium leading-normal">Decentralized Community Voting App</span>
+</div>
+<h1 class="text-text-light text-4xl font-black leading-tight tracking-tight">Decentralized Community Voting App</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Creator's avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTCH0Z7I2DFQga3sEKytODYBziuW1mRAjt5HhVlABnUWIs6YLik5fY8ROhtunJ0ttCEdHSaf7R6xGi1tZIIiHYw25e4xpA-Niq4upGrgDGjQB2uuLbhjihIepTTiJU0wIbR5KyajK33d1M1uvuq3t17J0aCZbXWyc7w0r8HpKT20rcp7S2Ornit8o8EImQCEssId6SpqiRqGL2bNFbsSFCo2Y4KwMfWfaSlZJQByj3KbkdW_XhXfmUcrKKG-1yvCHB1ZM1EUxX4S8");'></div>
+<p class="text-text-light text-base font-normal leading-normal flex-1 truncate">JaneSmith_Dev</p>
+</div>
+<div class="flex flex-wrap gap-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-dark bg-card-background">
+<p class="text-text-muted text-base font-medium leading-normal">Total Tips</p>
+<p class="text-text-light tracking-light text-2xl font-bold leading-tight">5,400 TKN</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-dark bg-card-background">
+<p class="text-text-muted text-base font-medium leading-normal">Likes</p>
+<p class="text-text-light tracking-light text-2xl font-bold leading-tight">1.2k</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-border-dark bg-card-background">
+<p class="text-text-muted text-base font-medium leading-normal">Tasks Completed</p>
+<p class="text-text-light tracking-light text-2xl font-bold leading-tight">8/12</p>
+</div>
+</div>
+<div class="rounded-xl border border-border-dark bg-card-background p-6">
+<h2 class="text-text-light text-xl font-bold mb-4">Project Description</h2>
+<p class="text-text-muted leading-relaxed">
+                                This project aims to build a fully decentralized application (dApp) that allows communities to create and participate in secure, transparent, and tamper-proof voting proposals. By leveraging blockchain technology, we can eliminate the need for central authorities, ensuring that every vote is recorded on an immutable ledger and all results are verifiable by anyone.
+                                <br/><br/>
+                                The core of the application will be a smart contract that manages proposal creation, voting periods, and result tallying. The front-end will be a clean, user-friendly interface built with modern web technologies, allowing for easy interaction with the blockchain. Our goal is to empower organizations, DAOs, and online communities with a trustworthy tool for making collective decisions.
+                            </p>
+</div>
+<div class="rounded-xl border border-border-dark bg-card-background p-6">
+<h2 class="text-text-light text-xl font-bold mb-4">Sub-Tasks</h2>
+<div class="mb-4">
+<div class="flex justify-between text-sm text-text-muted mb-1">
+<span>Progress</span>
+<span>66%</span>
+</div>
+<div class="w-full bg-border-dark rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 66%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-3 mt-6">
+<label class="flex items-center gap-4 p-4 rounded-lg bg-background-dark hover:bg-background-dark/80 transition-colors cursor-pointer">
+<input checked="" class="form-checkbox h-5 w-5 rounded bg-border-dark border-border-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-text-muted flex-1">Design UI/UX mockups in Figma</span>
+</label>
+<label class="flex items-center gap-4 p-4 rounded-lg bg-background-dark hover:bg-background-dark/80 transition-colors cursor-pointer">
+<input checked="" class="form-checkbox h-5 w-5 rounded bg-border-dark border-border-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-text-muted flex-1">Develop smart contract for voting logic</span>
+</label>
+<label class="flex items-center gap-4 p-4 rounded-lg bg-background-dark hover:bg-background-dark/80 transition-colors cursor-pointer">
+<input class="form-checkbox h-5 w-5 rounded bg-border-dark border-border-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-text-muted flex-1">Set up database schema for off-chain data</span>
+</label>
+<label class="flex items-center gap-4 p-4 rounded-lg bg-background-dark hover:bg-background-dark/80 transition-colors cursor-pointer">
+<input class="form-checkbox h-5 w-5 rounded bg-border-dark border-border-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-text-muted flex-1">Develop API endpoints for front-end</span>
+</label>
+<label class="flex items-center gap-4 p-4 rounded-lg bg-background-dark hover:bg-background-dark/80 transition-colors cursor-pointer">
+<input class="form-checkbox h-5 w-5 rounded bg-border-dark border-border-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-text-muted flex-1">Build front-end interface and connect to API</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4">
+<div class="sticky top-24 flex flex-col gap-8">
+<div class="rounded-xl border border-border-dark bg-card-background p-6 flex flex-col gap-4">
+<h3 class="text-text-light font-bold text-lg">Support this Project</h3>
+<div class="flex gap-2">
+<button class="flex-1 text-center py-2 px-4 rounded-lg bg-primary/20 text-primary font-semibold hover:bg-primary/30">10 TKN</button>
+<button class="flex-1 text-center py-2 px-4 rounded-lg bg-background-dark text-text-light font-semibold hover:bg-background-dark/80">50 TKN</button>
+<button class="flex-1 text-center py-2 px-4 rounded-lg bg-background-dark text-text-light font-semibold hover:bg-background-dark/80">100 TKN</button>
+</div>
+<input class="form-input w-full rounded-lg bg-background-dark border-border-dark text-text-light placeholder-text-gray-input focus:ring-primary focus:border-primary" placeholder="Or enter a custom amount" type="number"/>
+<button id="offer-tip-button" class="w-full flex items-center justify-center gap-2 rounded-lg bg-primary h-12 px-6 text-text-light text-base font-bold hover:bg-primary/80 transition-colors">
+<span>Offer Tip</span>
+</button>
+<div class="flex items-center justify-center gap-4 mt-2">
+<button id="like-button" class="flex items-center gap-2 text-text-muted hover:text-text-light transition-colors">
+<span class="material-symbols-outlined">thumb_up</span>
+<span>Like</span>
+</button>
+<div class="h-4 w-px bg-border-dark"></div>
+<button id="bookmark-button" class="flex items-center gap-2 text-text-muted hover:text-text-light transition-colors">
+<span class="material-symbols-outlined">bookmark_add</span>
+<span>Bookmark</span>
+</button>
+</div>
+</div>
+<div class="rounded-xl border border-border-dark bg-card-background p-6">
+<h3 class="text-text-light font-bold text-lg mb-4">Comments (3)</h3>
+<div class="flex flex-col gap-6 max-h-[400px] overflow-y-auto pr-2">
+<div class="flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 mt-1 shrink-0" data-alt="Commenter's avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp6YM0QWY27jd_mYWH6wt40uqYy16CiYde-df8-FVX9SGsEV7T72MmU651FXbhCpxJjvsOTjyFEcGKOqcL3NDJTRFl6YLFx-fPc7f49TIbt0CmTPbJZtT7deDU9UriwDPWeWJNKRfPPyiuFFfD8Rar1kyFHF03XbwhNSn4QvU27LhBUy91Fr7ILPjxmcDxjKh9YOpH0JVd-3a7WvbOZdbcgcdGQxcI11kGmHtjyVMj581Tba-X84YGqqCybkBHCtzjTpEvrGT9_14");'></div>
+<div class="flex flex-col">
+<p class="text-text-light font-medium text-sm">TechWizard</p>
+<p class="text-text-muted text-sm leading-relaxed">This is a fantastic idea! A transparent voting system is exactly what many online communities need. Happy to support this.</p>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 mt-1 shrink-0" data-alt="Commenter's avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1XQ5EGd80PVTBLMaPKbPWXThezrN99viUNVzh9ToLCXqItz9Ikl2ip5E5b9poRjL-tQXHm8YnJRSuAJMTesTzdjYw1VcipyX5zg5L1PZo5mm2FNr7gOXDWIsEY3f5T0wiICE5Kz45TYHMrauQuqv2QxIJA6kzKq4T3Un1qhY9ZxS9kebbR6b9_-DZK6MoOZg3wdUc1qBhgKNwkBEgyMWUM0KVyc3gjkvud9KsfNdgDT997-MqK97b2uwwHUQPFnn1Bw8POpD5WuM");'></div>
+<div class="flex flex-col">
+<p class="text-text-light font-medium text-sm">DAOEnthusiast</p>
+<p class="text-text-muted text-sm leading-relaxed">Excited to see the progress. Will the smart contracts be audited?</p>
+</div>
+</div>
+<div class="flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 mt-1 shrink-0" data-alt="Commenter's avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCRxfpj1Cfl5_Dc_K28CStE3H-RvsCLBQGx2G_ylqfYt3cpIvUiZfDyDoL4yXh-krXWTWl8WgPLc9P8jq9GBATkcio_wHfgZT1U7hEqgEqqNJoTq3-SUyOASucxKCLioeq8sNWoSMBLXQlS-czcFVcm-W4U-hPXyn73BOfZzOxq6ebkV059O5AWoTfWJOff6rSdU5YlcZQQpg-vWGVcCW8m-5XFXyfxhtcpmrT7OP7_24LLBmcaL3XIM-pHX8E_3J0zmwnwa_Tf-fo");'></div>
+<div class="flex flex-col">
+<p class="text-text-light font-medium text-sm">CryptoCoder</p>
+<p class="text-text-muted text-sm leading-relaxed">Great choice of tech stack. Looking forward to the testnet launch.</p>
+</div>
+</div>
+</div>
+<div class="mt-6 flex gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 shrink-0" data-alt="Current user's avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3TxM1RMEmmFDE-ezOJ5l1G0jDuENEnP_4K9XhMFpVF_VbnFxBnKJMQ_Ri8pYKUQZyDPlsE1sh6cU4Fj_ora3nhIOm-u9zBXJTmewsqKxXwhdfbtsGOf8LZP-ETRfkye4XFHviMg0ilg_51PWbkOoQJcMAojgS1B-31aXpvqH8TcRIFlCy4MQEWeGQIe-U7Xu7_OdN_UeAvUSPmt-qmPKmuC4oZuUn2wjLzb0D9QkRyhLaVRzBBfZ8tM_ToJD2IG0nPa97FbhKaQ8");'></div>
+<textarea class="form-textarea flex-1 resize-none rounded-lg bg-background-dark border-border-dark text-text-light placeholder-text-gray-input focus:ring-primary focus:border-primary" placeholder="Add a comment..." rows="2"></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<script>
+    document.getElementById('offer-tip-button').addEventListener('click', () => {
+        alert('Offer Tip button clicked!');
+    });
+    document.getElementById('like-button').addEventListener('click', () => {
+        alert('Like button clicked!');
+    });
+    document.getElementById('bookmark-button').addEventListener('click', () => {
+        alert('Bookmark button clicked!');
+    });
+</script>
+</body></html>
